@@ -1,16 +1,19 @@
 {
-  "name": "ai-report-backend",
+  "name": "mint-intellireport-backend",
   "version": "1.0.0",
+  "description": "Backend for Mint IntelliReport",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.6.1"
+    "mongodb": "^6.17.0",
+    "mongoose": "^7.0.3"
   }
 }
