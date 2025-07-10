@@ -16,7 +16,7 @@ export interface Permission {
     vieweeId: string;
 }
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://ai-report-manage-system-frontend.onrender.com/api';
 
 const App: React.FC = () => {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
