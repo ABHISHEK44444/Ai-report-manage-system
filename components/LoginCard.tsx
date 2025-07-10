@@ -65,7 +65,7 @@ const LoginCard: React.FC<LoginCardProps> = ({ onLogin }) => {
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   className="bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full pl-12 p-3.5 placeholder-gray-400 transition-colors"
-                  placeholder="Username(eg.admin,gulshan)"
+                  placeholder="Username(eg.admin,suresh)"
                   required
                 />
               </div>
