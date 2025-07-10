@@ -36,7 +36,7 @@ const App: React.FC = () => {
 
   const handleLogin = async (username: string, password: string) => {
     try {
-      const res = await fetch(`${API_URL}/auth/login`, {
+      const res = await fetch('https://ai-report-manage-system-frontend.onrender.com/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
