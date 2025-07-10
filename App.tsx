@@ -16,7 +16,7 @@ export interface Permission {
     vieweeId: string;
 }
 
-//const API_URL = 'https://ai-report-manage-system-backend.onrender.com';
+const API_URL = 'https://ai-report-manage-system-backend.onrender.com';
 
 const App: React.FC = () => {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
@@ -36,7 +36,7 @@ const App: React.FC = () => {
 
   const handleLogin = async (username: string, password: string) => {
     try {
-      const res = await fetch('https://ai-report-manage-system-backend.onrender.com/auth/login', {
+      const res = await fetch(`${API_URL}/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
